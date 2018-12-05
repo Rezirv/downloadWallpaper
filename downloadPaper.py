@@ -14,8 +14,8 @@ from io import StringIO
 socket.setdefaulttimeout(40)
 wallhavenpath="/media/rezirv/hu/spider/wallhaven/NSFW/"
 url ="https://alpha.wallhaven.cc/search?q=&categories=111&purity=001&sorting=views&order=desc&page=1"
-proxyes=[{'http':'https://proxy.asec.buptnsrc.com:8001'},{'http':'https://proxy3.asec.buptnsrc.com:8001'}]
-proxies=['proxy.asec.buptnsrc.com:8001','proxy3.asec.buptnsrc.com:8001']
+proxyes=[{'###'},{'###'}]
+proxies=['######]
 headers = {
 'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
 'Cookie': '__cfduid=d869aee3ba3946562429b114a4727e8271536831391; _pk_ref.1.1f04=%5B%22%22%2C%22%22%2C1543845332%2C%22http%3A%2F%2Flink.zhihu.com%2F%3Ftarget%3Dhttps%3A%2F%2Falpha.wallhaven.cc%2F%22%5D; remember_82e5d2c56bdd0811318f0cf078b78bfc=eyJpdiI6ImxKTmNiM0t5K2xBK1pZQ0ladzBmVmNTUjY5OUFjYmdGN0RQazhGOUdVSUU9IiwidmFsdWUiOiJHUDhFRG9vbUtvbDRPQjhUYU1jZitnY3JTalpiRXl2M2x0Nkx5RWVTSkJRdTNReEVHQWJzMWlrUWVjYUtRejlvajVMSTFhQnpkeGI3REdHcXl5UDY5b3NDU3FCclR6QTNadTY3ODU5MzhVMVM5ank0aWM1RGtKVnhqRlBRK2w3TCIsIm1hYyI6ImY1MzAwYWMzYzUyOTQ5NDcxMjFlZmYxZWZiN2I2MGE5NDQyMTIyZTgzYTUzM2RhYmRhMzJiYWZmMWYzZjAxM2YifQ%3D%3D; wallhaven_session=eyJpdiI6IktpNjQ5MDlrbmI2VGZsUTQzYVwvblM0ZHBQMUMwdUdBdW0rWGpUeVg0V0d3PSIsInZhbHVlIjoiam00Znh5azAzUnhsNWpCcW5DOXl1N0VraVlncHVTNmVCcWwydDhoY0pLbG5SaFhvNTJcL2dJZUpacmx1TkRUTHNVRExudldxZVV0emZycFN0cUZCNG5RPT0iLCJtYWMiOiI5MGZmNWJkMmY4YzZkZmExYzkwZDdmNDJjOGU2Mjc4MTNlZmU4OTBiYTMwNzA1NmZmYTg4YjRkMDBjMzIxZWYxIn0%3D; _pk_id.1.1f04=3109da2e1065ea6d.1536831395.18.1543845483.1543845332.',
@@ -47,8 +47,8 @@ if __name__=='__main__':
         username = browser.find_element_by_id('username')
         password = browser.find_element_by_id('password')
         loginnow = browser.find_element_by_xpath("//button[@class='button green']")
-        username.send_keys("rezirv")
-        password.send_keys("chenlei2339")
+        username.send_keys("####")
+        password.send_keys("####")
         time.sleep(random.randint(1,5))
         loginnow.click()
         link=re.sub('page=\d','page=%s'%(i),url,re.S)
